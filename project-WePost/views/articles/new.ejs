@@ -1,0 +1,11 @@
+<h2>New Article</h2>
+
+<form action="/articles" method="POST">
+    <%- include('_form_fields') %> 
+    <a href="/articles">Cancel</a>
+    <button type="submit">Create</button>
+</form><br><br>
+
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>

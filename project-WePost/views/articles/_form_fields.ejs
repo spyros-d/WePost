@@ -1,0 +1,18 @@
+<div>
+    <label>Title</label>
+    <input type="text" required name="title" value="<%= article.title %>" >
+    <label>Author</label>
+    <input type="text" id="author" required name="author" value="<%= article.author %>">
+</div><br>
+
+<label>Description</label>
+<div>
+    <textarea required name="description"><%= article.description %></textarea>
+</div><br>
+
+<div>
+    <label>Created At</label>
+    <input type="date" required name="creationDate" 
+        value="<%= article.creationDate == null ? '' : 
+        article.creationDate.toISOString().split('T')[0] %>">
+</div><br>

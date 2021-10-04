@@ -1,0 +1,15 @@
+<h2>Recently Articles</h2>
+<div>
+    <% articles.forEach(article => { %>
+        <div style="
+            text-align: left;"
+        >   
+        <p> 
+            <b>Title:</b> <%= article.title %> 
+            <b>Author:</b> <a href="/authorArticles" id="<%= article.author %>"> <%= article.author %> </a>
+            <b>Description: </b> <%= article.description %> 
+            <b>Created At: </b> <%= article.creationDate.toISOString().split('T')[0] %>
+        </p>
+        </div>
+    <% }); %>
+</div>
